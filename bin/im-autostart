@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+
+gtk_im_method=`echo $GTK_IM_MODULE`
+qt_im_method=`echo $QT_IM_MODULE`
+
+if [ "$qt_im_method" == "ibus" ] && [ "$gtk_im_method" == "ibus" ]; then
+  ibus-daemon -rxd
+elif [ "$qt_im_method" == "fcitx" ] && [ "$gtk_im_method" == "fcitx" ]; then
+  fcitx -rd
+else 
+  echo "input method of gtk and qt modules are not consistent"
+fi
