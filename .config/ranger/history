@@ -1,0 +1,50 @@
+sor
+cd /home/alvin-arch2/.pornos
+search lett
+rename UChiago_Rej_Letter.pdf
+cd .
+mkdir 橋本ありな
+search express
+mkdir Cal State Univ
+open_with gnome-mpv
+search profile
+search prof
+shell nvim adb-kill-proc
+search 穗
+search 果
+copy 
+rename la-capitaine-icon-theme
+search NSCU
+search WPI
+mkdir CSULB
+open_with evince
+search NCSU
+cd ./.pornos/
+cd .config/autostart
+search kde
+search plasma
+search De
+search
+cd .config/
+cd .local/share/
+search mime
+open_with libreoffice
+search Down
+search SBU
+cd /etc/profile.d/
+cd /etc/
+q
+cd ~/.bt
+cd .bt
+cut
+cd .pornos/
+paste 
+delete 
+cd .local/
+search steam
+search 
+sort tome
+open_with nvim
+
+cd .local/share/applications
+sort mtime

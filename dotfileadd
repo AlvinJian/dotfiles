@@ -1,0 +1,19 @@
+#!/bin/sh
+dot_dir=$HOME/dotfiles
+if [ ! -d $dot_dir ]; then
+  echo "$dot_dir does not exist!"
+  exit
+fi
+#if [ ! -f $1 ]; then
+#  echo "$1 is not a file"
+#  exit
+#fi
+where_i_am=`pwd`
+file_dir=`dirname $1`
+file_dir_long=${where_i_am}/${file_dir}
+echo "add $file_dir_long/$1 to dotfiles"
+sub_dir=`echo $file_dir_long | sed -e "s|$HOME/||g"`
+target_dir="$dot_dir/$sub_dir"
+# echo $target_dir
+mkdir -p $target_dir
+cp -r $1 $target_dir
